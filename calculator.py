@@ -1,3 +1,11 @@
+def get_valid_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Please enter a valid number.")
+            
+            
 def calculator():
     print("Simple Calculator")
     print("1. Add")
@@ -6,8 +14,8 @@ def calculator():
     print("4. Divide")
     
     choice = input("Enter choice (1-4): ")
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+    num1 = get_valid_number("Enter first number: ")
+    num2 = get_valid_number("Enter second number: ")
     
     if choice == '1':
         print(f"{num1} + {num2} = {num1 + num2}")
