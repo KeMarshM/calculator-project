@@ -12,7 +12,7 @@ def calculator():
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
-    
+    # Add function to calculate square root
     choice = input("Enter choice (1-4): ")
     num1 = get_valid_number("Enter first number: ")
     num2 = get_valid_number("Enter second number: ")
