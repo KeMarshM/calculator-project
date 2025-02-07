@@ -1,3 +1,5 @@
+# function to calculate factorial of a number
+
 def get_valid_number(prompt):
     while True:
         try:
@@ -12,6 +14,7 @@ def calculator():
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
+    # Add function to calculate square root
     # Add function to calculate square root
     choice = input("Enter choice (1-4): ")
     num1 = get_valid_number("Enter first number: ")
@@ -33,3 +36,10 @@ def calculator():
 
 if __name__ == "__main__":
     calculator()
+
+
+
+# simple function to add two numbers
+def add(num1, num2):
+    return num1 + num2
+
